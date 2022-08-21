@@ -1,14 +1,16 @@
-// This is a react component.
+import Backdrop from "./components/Backdrop";
+import Modal from "./components/Modal";
+import Todo from "./components/Todo";
+
 function App() {
   return (
     <div>
       <h1>My Todos</h1>
-      <div className='card'>
-        <h2>TITLE</h2>
-        <div className='actions'>
-          <button className='btn'>Delete</button>
-        </div>
-      </div>
+      <Todo text='Learn react'/>
+      <Todo text='Master React'/>
+      <Todo text='Explore the Full React Course'/>
+      <Modal/>
+      <Backdrop/>
     </div>
   );
 }
